@@ -103,7 +103,7 @@ public class Program{
     {
         Console.WriteLine("How many siblings do you have?");
         int haveSiblings = int.Parse(Console.ReadLine());
-        havSibs = $"has haveSiblings sibling/siblings";
+        havSibs = $"has {haveSiblings} sibling/siblings";
         
     }
     public static void DisplaySummmaryMessage()
