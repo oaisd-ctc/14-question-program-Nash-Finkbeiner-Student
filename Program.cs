@@ -1,48 +1,69 @@
 ﻿using System;
 
 public class Program{
+    public static string name;
+    public static int age;
+    public static string eyeColor;
+    public static string hairColor;
+    public static int shoeSize;
+    public static string favColor;
+    public static string favShow;
+    public static string favTeacher;
+    public static string favClass;
+    public static string favHoliday;
+    public static string favSeason;
+    public static string dreamJob;
+    public static string havSibs;
+    public static int age5;
+
 
     public static void Main(string[] args)
     {
         Console.WriteLine("Whats your name?");
-        string name = Console.ReadLine();
+        name = Console.ReadLine();
 
         Console.WriteLine("Whats your age?");
-        int age = int.Parse(Console.ReadLine());
+        age = int.Parse(Console.ReadLine());
 
         Console.WriteLine("Whats your eye color?");
-        string eyeColor = Console.ReadLine();
+        eyeColor = Console.ReadLine();
 
         Console.WriteLine("Whats your hair color?");
-        string hairColor = Console.ReadLine();
+        hairColor = Console.ReadLine();
 
         Console.WriteLine("Whats your shoe size?");
-        int shoeSize = int.Parse(Console.ReadLine());
+        shoeSize = int.Parse(Console.ReadLine());
 
         Console.WriteLine("Whats your favorite color?");
-        string favColor = Console.ReadLine();
+        favColor = Console.ReadLine();
 
         Console.WriteLine("Whats your favorite tv show?");
-        string favShow = Console.ReadLine();
+        favShow = Console.ReadLine();
 
         Console.WriteLine("Who's your favorite teacher?");
-        string favTeacher = Console.ReadLine();
+        favTeacher = Console.ReadLine();
 
         Console.WriteLine("Whats your favorite class?");
-        string favClass = Console.ReadLine();
+        favClass = Console.ReadLine();
 
         Console.WriteLine("Whats your favorite holiday?");
-        string favHoliday = Console.ReadLine();
+        favHoliday = Console.ReadLine();
 
         Console.WriteLine("Whats your favorite season?");
-        string favSeason = Console.ReadLine();
+        favSeason = Console.ReadLine();
 
         Console.WriteLine("Whats your dream job?");
-        string dreamJob = Console.ReadLine();
-
+        dreamJob = Console.ReadLine();
+    }
+    public static void CalculateAgeIn5Years()
+    {
+        age5 = age + 5;
+    }
+    public static void AskNumberOfSiblings()
+    {
         Console.WriteLine("How many siblings do you have?");
         int haveSiblings = int.Parse(Console.ReadLine());
-        string havSibs = "";
+        havSibs = "";
         if(haveSiblings = 1)
         {
             havSibs = " does have a sibling";
@@ -55,10 +76,9 @@ public class Program{
         {
             havSibs = " doesn't have any siblings";
         }
-       
-
-        int age5 = age + 5;
-
+    }
+    public static void DisplaySummmaryMessage()
+    {
         Console.WriteLine("My friends name is " + name + ". " + name + " is " + age + " years old. " + name + "'s eye color is " + eyeColor + " and " + name + "'s hair color is " + hairColor + ". "
          + name + "'s  shoe size is " + shoeSize + " and thier favorite color is " + favColor + ".\n " + name + "'s favorite TV show is " + favShow + " and thier favorite teacher is " + favTeacher + ". " 
          + name + "'s favorite class is " + favClass + " and thier the holiday they like the most is " + favHoliday + ". " + name + "'s favorite season is " + favSeason + ". " + 
